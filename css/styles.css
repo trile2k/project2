@@ -138,9 +138,17 @@ a.body-link:hover {
 }
 
 /* Link for image caption */
-a.img-link:link {color:white;}
-a.img-link:visited {color:red;}
-a.img-link:hover {background:lightgreen;}
+a.img-link:link {
+  color:white;
+}
+
+a.img-link:visited {
+  color:red;
+}
+
+a.img-link:hover {
+  background:lightgreen;
+}
 
 /* Image box */
 figure {
