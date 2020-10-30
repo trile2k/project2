@@ -1,4 +1,4 @@
-/* CSS Style for Project 2 */
+/* CSS file for ITMD-361 Project 2 – add CSS to the 3-page website. */
 
 * { /* for all elements */
   box-sizing: border-box; /*padding and border are included in the width and height */
@@ -20,12 +20,6 @@ h1 { /* Heading 1 */
   text-shadow: 2px 2px 5px red;
 }
 
-h1.shadow { /* Heading 1 Shadow *?
-  color: black;
-  font-size: 3vw; /* Viewport is browser window size. 1vw = 1% of viewport width. If viewport is 50cm wide, 1vw is 0.5cm */
-  text-shadow: 2px 2px 5px red;
-}
-
 h2, h3, h4 { /* Heading 2 - 4 Setting */
   font-family: 'Oldenburg', cursive;
   font-weight: 900;
@@ -36,6 +30,7 @@ h2, h3, h4 { /* Heading 2 - 4 Setting */
 .h2center { /* Heading 2 specific setting */
   text-align: center;
   font-size: 170%;
+  padding-top: 40px;
 }
 
 h3 { /* Heading 3 */
@@ -54,6 +49,10 @@ p { /* Paragraph Setting */
   text-align: justify;
 }
 
+.jobtitle { /* Size for Job Title */
+  font-size: 125%;
+}
+
 .center { /* Center Text */
   text-align: center;
   padding-left: 0px;
@@ -68,57 +67,57 @@ p { /* Paragraph Setting */
 .webpage-layout { /* Page layout for every web page */
 	max-width: 960px;
 	margin: 0 auto;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
-	border-radius: 12px 12px 0px 0px;
+  box-shadow: 4px 8px 10px 8px grey;
   background-color: rgba(191, 191, 63, 0.3); /* light green */
+  border-radius: 15px;
 }
 
 .header { /* Header at the top of every web page */
   font-family: 'Atma', cursive;
   background-color: lightgrey;
   text-align: center;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 /* Navigation Link Setting below */
 .nav-links {
-	float: left;
-	width: 100%;
-  background-color: olive;
   font-size: 175%;
+  background-color: olive;
+  float: left;
+  width: 100%;
 }
 
 .nav-links ul {
 	list-style-type: none;
+	position: relative;
 	margin: 0;
 	padding: 0;
 	float: left;
-	position: relative;
-	left:50%;
+	left: 50%;
 }
 
 .nav-links ul li {
-	float: left;
 	position: relative;
+	float: left;
 	right: 50%;
 }
 
 .nav-links ul li a {
+  color: firebrick;
 	padding: 10px 25px;
 	display: block;
 	text-decoration: none;
-  color: firebrick;
 }
 
 .nav-links ul li a:hover {
-  background-color: firebrick;
   color: olive;
+  background-color: firebrick;
 }
 
 .footer { /* Page footer */
-  background-color: lightgrey;
 	height: 50px;
   font-size: 20px;
+  background-color: lightgrey;
 	clear: both;
   display: flex;
   justify-content: center;
@@ -126,9 +125,17 @@ p { /* Paragraph Setting */
 }
 
 /* Link on the page body */
-a.body-link:link {color:#ff0000;}
-a.body-link:visited {color:#0000ff;}
-a.body-link:hover {font-size:150%;}
+a.body-link:link {
+  color:red;
+}
+
+a.body-link:visited {
+  color:blue;
+}
+
+a.body-link:hover {
+  font-size:110%;
+}
 
 /* Link for image caption */
 a.img-link:link {color:white;}
@@ -137,7 +144,6 @@ a.img-link:hover {background:lightgreen;}
 
 /* Image box */
 figure {
-  border: 0px #cccccc solid;
   border: thick black solid;
   padding: 0;
   margin: auto;
@@ -145,6 +151,7 @@ figure {
   background-color: black;
   border-top: none;
   padding-top: 0;
+  border-radius: 0 0 15px 15px;
 }
 
 /* Image Caption */
@@ -159,6 +166,7 @@ figcaption {
   max-width: 560px;
   border: thick black solid;
   border-bottom: none;
+  border-radius: 15px 15px 0 0;
 }
 
 .img-column { /* 2 column images */
@@ -197,7 +205,7 @@ video{ /* Video Setting */
   max-height: 340px;
 }
 
-ul li { /* Line Item Setting */
+ul li { /* List Item Setting */
   font-family: 'Arima Madurai', cursive;
   font-size: 20px;
   padding-left: 10px;
@@ -205,7 +213,7 @@ ul li { /* Line Item Setting */
   padding-right: 20px;
 }
 
-.li-padding { /* Line item specific setting */
+.li-padding { /* List item padding */
   padding-bottom: 5px;
 }
 
@@ -240,7 +248,7 @@ ul li { /* Line Item Setting */
  font-size: 16px;
 }​
 
-/* pseduo-element to take care of clearing floating element */
+/* pseduo-element to take care of clearing float element */
 .clearfix::after {
   padding-left: 0px;
   padding-top: 0px;
@@ -261,19 +269,42 @@ ul li { /* Line Item Setting */
   padding-top: 10px;
 }
 
-#intro { /* Intro specific setting */
+#intro { /* Homepage Intro */
   padding-top: 50px;
   text-align: center;
 }
 
-#contact { /* Contact specific setting */
-  padding-top: 50px;
-  text-align: center;
+#saigon { /* Saigon portion setting */
+  font-family: 'Arima Madurai', cursive;
 }
 
-#resume-name { /* Resume name specific */
-  font-weight: 400;
-  text-align: center;
-  color: blue;
-  font-size: 30px;
+#halong { /* Halong portion */
+  text-align: left;
+}
+
+#sapa { /* sapa portion */
+  font-family: 'Arima Madurai', cursive;
+  text-align: left;
+}
+
+#other { /* Other portion setting */
+  font-family: 'Arima Madurai', cursive;
+}
+
+#summary { /* Resume Summary */
+  font-family: 'Arima Madurai', cursive;
+}
+
+#key_skills { /* Resume Key Skills */
+  font-family: 'Arima Madurai', cursive;
+  text-align: left;
+}
+
+#experience { /* Resume Experience Section */
+  padding-top: 0px;
+  text-align: left;
+}
+
+#education { /* Resume Education Section */
+  text-align: left;
 }
