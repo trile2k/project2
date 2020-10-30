@@ -41,7 +41,7 @@ h2, h3, h4 { /* Heading 2 - 4 Setting */
 .h2center { /* Heading 2 specific setting */
   text-align: center;
   font-size: 170%;
-  padding-top: 2.5em;
+  padding-top: 1.5em;
 }
 
 h3 { /* Heading 3 */
@@ -241,7 +241,7 @@ ul li { /* List Item Setting */
   float: left;
   width:33.33%;
   text-align:center;
-  padding-top: 1.25em;
+  padding-top: 0.5em;
   font-family: 'Arima Madurai', cursive;
   font-size: 300%;
   font-weight: 900;
