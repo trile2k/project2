@@ -6,9 +6,20 @@
 
 body { /* Page body */
   background-color: seashell;
-  margin-left: 20px;
-  padding-left: 10px;
-  padding-right: 20px;
+  margin-left: 1.25em; /* 1em = 16px */
+  padding-left: 0.625em;
+  padding-right: 1.25em;
+}
+
+.footer { /* Page footer */
+  font-family: Arial, Helvetica, sans-serif; /* Native font */
+  height: 3.125em;
+  font-size: 1em;
+  background-color: lightgrey;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 { /* Heading 1 */
@@ -23,14 +34,14 @@ h1 { /* Heading 1 */
 h2, h3, h4 { /* Heading 2 - 4 Setting */
   font-family: 'Oldenburg', cursive;
   font-weight: 900;
-  padding-left: 10px;
-  padding-top: 30px;
+  padding-left: 0.625em;
+  padding-top: 1.875em;
 }
 
 .h2center { /* Heading 2 specific setting */
   text-align: center;
   font-size: 170%;
-  padding-top: 40px;
+  padding-top: 2.5em;
 }
 
 h3 { /* Heading 3 */
@@ -43,9 +54,9 @@ h4 { /* Heading 4 */
 
 p { /* Paragraph Setting */
   font-family: 'Arima Madurai', cursive;
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 20px;
+  font-size: 1.25em;
+  padding-left: 0.625em;
+  padding-right: 1.25em;
   text-align: justify;
 }
 
@@ -69,14 +80,14 @@ p { /* Paragraph Setting */
   margin: 0 auto;
   box-shadow: 4px 8px 10px 8px grey;
   background-color: rgba(191, 191, 63, 0.3); /* light green */
-  border-radius: 15px;
+  border-radius: 0.9375em;
 }
 
 .header { /* Header at the top of every web page */
   font-family: 'Atma', cursive;
   background-color: lightgrey;
   text-align: center;
-  padding: 5px 0;
+  padding: 0.3125em 0;
 }
 
 /* Navigation Link Setting below */
@@ -114,16 +125,6 @@ p { /* Paragraph Setting */
   background-color: firebrick;
 }
 
-.footer { /* Page footer */
-  height: 50px;
-  font-size: 20px;
-  background-color: lightgrey;
-  clear: both;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Link on the page body */
 a.body-link:link {
   color:red;
@@ -159,7 +160,7 @@ figure {
   background-color: black;
   border-top: none;
   padding-top: 0;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 0.9375em 0.9375em;
 }
 
 /* Image Caption */
@@ -167,20 +168,20 @@ figcaption {
   font-family: 'Arima Madurai', cursive;
   background-color: black;
   color: white;
-  padding: 2px;
+  padding: 0.125em;
   text-align: left;
   display: table-caption;
   caption-side: top;
   max-width: 560px;
   border: thick black solid;
   border-bottom: none;
-  border-radius: 15px 15px 0 0;
+  border-radius: 0.9375em 0.9375em 0 0;
 }
 
 .img-column { /* 2 column images */
   float: left;
   width: 50%;
-  padding: 4px;
+  padding: 0.25em;
 }
 
 /* Clearfix (clear floats) for next row of images*/
@@ -199,18 +200,18 @@ figcaption {
 
 img { /* Image Setting */
   align-self: center;
-  width: 450px;
-  height: 300px;
-  max-width:450px;
-  max-height: 300px;
+  width: 28.125em;
+  height: 18.75em;
+  max-width:28.125em;
+  max-height: 18.75em;
 }
 
 video{ /* Video Setting */
   align-self: center;
-  width: 450px;
-  height: 340px;
-  max-width:450px;
-  max-height: 340px;
+  width: 28.125em;
+  height: 21.25em;
+  max-width:28.125em;
+  max-height: 21.25em;
 }
 
 ul li { /* List Item Setting */
@@ -228,19 +229,19 @@ ul li { /* List Item Setting */
 /* Align left, center, right on a Resume line */
 .alignleft {
   float: left;
-  width:33.33333%;
+  width:33.33%;
   text-align:left;
-  padding-left: 10px;
-  padding-top: 40px;
+  padding-left: 0.625em;
+  padding-top: 2.5em;
   font-family: 'Arima Madurai', cursive;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .aligncenter {
   float: left;
-  width:33.33333%;
+  width:33.33%;
   text-align:center;
-  padding-top: 20px;
+  padding-top: 1.25em;
   font-family: 'Arima Madurai', cursive;
   font-size: 300%;
   font-weight: 900;
@@ -248,12 +249,12 @@ ul li { /* List Item Setting */
 
 .alignright {
   float: left;
-  width:33.33333%;
+  width:33.33%;
   text-align:right;
-  padding-top: 40px;
-  padding-right: 20px;
+  padding-top: 2.5em;
+  padding-right: 1.25em;
   font-family: 'Arima Madurai', cursive;
-  font-size: 16px;
+  font-size: 1em;
 }​
 
 /* pseduo-element to take care of clearing float element */
@@ -274,11 +275,11 @@ ul li { /* List Item Setting */
   font-family: 'Arima Madurai', cursive;
   font-size: 150%;
   font-weight: 900;
-  padding-top: 10px;
+  padding-top: 0.625em;
 }
 
 #intro { /* Homepage Intro */
-  padding-top: 50px;
+  padding-top: 3.125em;
   text-align: center;
 }
 
