@@ -65,8 +65,8 @@ p { /* Paragraph Setting */
 }
 
 .webpage-layout { /* Page layout for every web page */
-	max-width: 960px;
-	margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
   box-shadow: 4px 8px 10px 8px grey;
   background-color: rgba(191, 191, 63, 0.3); /* light green */
   border-radius: 15px;
@@ -88,25 +88,25 @@ p { /* Paragraph Setting */
 }
 
 .nav-links ul {
-	list-style-type: none;
-	position: relative;
-	margin: 0;
-	padding: 0;
-	float: left;
-	left: 50%;
+  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+  left: 50%;
 }
 
 .nav-links ul li {
-	position: relative;
-	float: left;
-	right: 50%;
+  position: relative;
+  float: left;
+  right: 50%;
 }
 
 .nav-links ul li a {
   color: firebrick;
-	padding: 10px 25px;
-	display: block;
-	text-decoration: none;
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
 }
 
 .nav-links ul li a:hover {
@@ -115,10 +115,10 @@ p { /* Paragraph Setting */
 }
 
 .footer { /* Page footer */
-	height: 50px;
+  height: 50px;
   font-size: 20px;
   background-color: lightgrey;
-	clear: both;
+  clear: both;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,13 +239,13 @@ ul li { /* List Item Setting */
 }
 
 .alignright {
- float: left;
- width:33.33333%;
- text-align:right;
- padding-top: 40px;
- padding-right: 20px;
- font-family: 'Arima Madurai', cursive;
- font-size: 16px;
+  float: left;
+  width:33.33333%;
+  text-align:right;
+  padding-top: 40px;
+  padding-right: 20px;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 16px;
 }​
 
 /* pseduo-element to take care of clearing float element */
