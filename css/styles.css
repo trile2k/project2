@@ -161,6 +161,9 @@ figure {
   border-top: none;
   padding-top: 0;
   border-radius: 0 0 0.9375em 0.9375em;
+
+  max-width: 100%;
+  height: auto;
 }
 
 /* Image Caption */
@@ -181,7 +184,6 @@ figcaption {
 .img-column { /* 2 column images */
   float: left;
   width: 50%;
-  padding: 0.25em;
 }
 
 /* Clearfix (clear floats) for next row of images*/
