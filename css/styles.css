@@ -162,8 +162,10 @@ figure {
   padding-top: 0;
   border-radius: 0 0 0.9375em 0.9375em;
 
-  max-width: 100%;
-  height: auto;
+  /* max-width: 560px; */
+
+  /* max-width: 100%;
+  height: auto; */
 }
 
 /* Image Caption */
@@ -184,6 +186,9 @@ figcaption {
 .img-column { /* 2 column images */
   float: left;
   width: 50%;
+  padding: 0.25em;
+
+  /* max-width: 50%; */
 }
 
 /* Clearfix (clear floats) for next row of images*/
@@ -193,12 +198,7 @@ figcaption {
   display: table;
 }
 
-/* Responsive layout - makes the 2 columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
+
 
 img { /* Image Setting */
   align-self: center;
@@ -318,4 +318,31 @@ ul li { /* List Item Setting */
 
 #education { /* Resume Education Section */
   text-align: left;
+}
+
+/* Responsive layout */
+@media (min-width: 541px) and (max-width: 700px) {
+  .nav-links ul li {
+    position: relative;
+    float: left;
+    right: 50%;
+    font-size: 70%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 250%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .nav-links ul li {
+    position: relative;
+    float: left;
+    right: 50%;
+    font-size: 50%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 200%;
+  }
 }
