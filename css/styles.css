@@ -332,6 +332,30 @@ ul li { /* List Item Setting */
   h1 {
     font-size: 250%;
   }
+  h2 {
+    font-size: 150%;
+  }
+  h3 { /* Heading 3 */
+    font-size: 130%;
+  }
+
+  h4 { /* Heading 4 */
+    font-size: 110%;
+  }
+  p {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.1em;
+    padding-left: 0.625em;
+    padding-right: 1.25em;
+    text-align: justify;
+  }
+  ul li { /* List Item Setting */
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.1em;
+    padding-left: 10px;
+    text-align: justify;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -344,5 +368,29 @@ ul li { /* List Item Setting */
   }
   h1 {
     font-size: 200%;
+  }
+  h2 {
+    font-size: 140%;
+  }
+  h3 { /* Heading 3 */
+    font-size: 120%;
+  }
+
+  h4 { /* Heading 4 */
+    font-size: 105%;
+  }
+  p {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 0.9em;
+    padding-left: 0.625em;
+    padding-right: 1.25em;
+    text-align: justify;
+  }
+  ul li { /* List Item Setting */
+    font-family: 'Arima Madurai', cursive;
+    font-size: 0.9em;
+    padding-left: 10px;
+    text-align: justify;
+    padding-right: 20px;
   }
 }
