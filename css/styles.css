@@ -162,9 +162,8 @@ figure {
   padding-top: 0;
   border-radius: 0 0 0.9375em 0.9375em;
 
-  /* max-width: 560px; */
-
-  /* max-width: 100%;
+  /* max-width: 560px;
+  max-width: 100%;
   height: auto; */
 }
 
@@ -321,7 +320,7 @@ ul li { /* List Item Setting */
 }
 
 /* Responsive layout */
-@media (min-width: 541px) and (max-width: 700px) {
+@media (min-width: 541px) and (max-width: 930px) {
   .nav-links ul li {
     position: relative;
     float: left;
@@ -356,6 +355,20 @@ ul li { /* List Item Setting */
     text-align: justify;
     padding-right: 20px;
   }
+  .img-column { /* 2 column images */
+    float: none;
+    width: 40%;
+    /* padding: 0.25em; */
+    padding-left: 2em;
+    padding-bottom: 1em;
+  }
+  img { /* Image Setting */
+    align-self: center;
+    width: 25em;
+    height: 18em;
+    max-width:25em;
+    max-height: 18em;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -381,7 +394,7 @@ ul li { /* List Item Setting */
   }
   p {
     font-family: 'Arima Madurai', cursive;
-    font-size: 0.9em;
+    font-size: 1em;
     padding-left: 0.625em;
     padding-right: 1.25em;
     text-align: justify;
@@ -392,5 +405,24 @@ ul li { /* List Item Setting */
     padding-left: 10px;
     text-align: justify;
     padding-right: 20px;
+  }
+  .img-column { /* 2 column images */
+    float: none;
+    width: 40%;
+    padding: 0.5em;
+  }
+  img { /* Image Setting */
+    align-self: center;
+    width: 25em;
+    height: 18em;
+    max-width:25em;
+    max-height: 18em;
+  }
+  video{ /* Video Setting */
+    align-self: center;
+    width: 25em;
+    height: 20em;
+    max-width:25em;
+    max-height: 20em;
   }
 }
