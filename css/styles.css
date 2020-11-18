@@ -111,6 +111,8 @@ p { /* Paragraph Setting */
   position: relative;
   float: left;
   right: 50%;
+  text-align: center;
+  width: 33%; /* Avoid stacking on smaller pages */
 }
 
 .nav-links ul li a {
@@ -311,13 +313,16 @@ ul li { /* List Item Setting */
   text-align: left;
 }
 
-/* Responsive layout for medium size page */
-@media (min-width: 541px) and (max-width: 930px) {
+/* Responsive layout for medium size page -
+ * will change using min-width for project 3.
+ */
+@media (min-width: 541px) and (max-width: 1010px) {
   .nav-links ul li {
     position: relative;
     float: left;
     right: 50%;
-    font-size: 70%;
+    text-align: center;
+    font-size: 80%;
     padding: 0;
   }
   h1 {
@@ -362,13 +367,16 @@ ul li { /* List Item Setting */
   }
 }
 
-/* Responsive layout for small size page */
+/* Responsive layout for small size page -
+ * will change using min-width for project 3.
+ */
 @media screen and (max-width: 540px) {
   .nav-links ul li {
     position: relative;
     float: left;
     right: 50%;
-    font-size: 50%;
+    text-align: center;
+    font-size: 70%;
     padding: 0;
   }
   h1 {
