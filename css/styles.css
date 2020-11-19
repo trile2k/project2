@@ -121,7 +121,7 @@ p { /* Paragraph Setting */
 .nav-links ul li a {
   color: firebrick;
   padding: 10px 25px;
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
